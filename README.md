@@ -4,7 +4,7 @@
 - 상세 가이드는 읽기 권한이 없으면 접근할 수 없습니다. 필요시 읽기 권한을 [요청](mailto:kkj99@nets.co.kr) 하시기 바랍니다.
 -----
 ## 상세 가이드
-- application의 Platfrion + Framework에 해당하는 가이드 참고
+- application의 Platform + Framework에 해당하는 가이드 참고
 - [Java 1.8 + Spring 4.3.2](https://github.com/kkj99/java_spring_4_3_2)
 - [Java 1.8 + Spring 4.3.4](https://github.com/kkj99/java_spring_4_3_4)
 - [Java 1.8 + Spring 4.3.13](https://github.com/kkj99/java_spring_4_3_13)
