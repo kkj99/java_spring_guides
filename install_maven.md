@@ -63,11 +63,13 @@
 * 버전 정보를 출력하게 하여 정상적으로 실행되는지 확인한다.
     ```shell
     mvn -v
-    
-    # 출력내용 예시
-    # Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
-    # Maven home: ~~~
-    # Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
-    # Default locale: ko_KR, platform encoding: UTF-8
-    # OS name: "linux", version: "5.15.0-46-generic", arch: "amd64", family: "unix"
     ```
+  
+  > 출력내용 예시 
+  > ```text
+  > Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+  > Maven home: ~~~
+  > Java version: 1.8.0_342, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+  > Default locale: ko_KR, platform encoding: UTF-8
+  > OS name: "linux", version: "5.15.0-46-generic", arch: "amd64", family: "unix"
+  > ```

@@ -54,40 +54,44 @@
 * 설정 확인
   ```shell
   ${tomcat 폴더}\configtest.bat
-   
-  # Using CATALINA_BASE: ~~~
-  # Using CATALINA_HOME: ~~~
-  # Using CATALINA_TMPDIR: ~~~
-  # Using JRE_HOME: ~~~
-  # Using CLASSPATH: ~~~
-  # ...
-  # ...
-  # ...
-  # 13-Oct-2022 21:46:12.746 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-  # 13-Oct-2022 21:46:13.057 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
-  # 13-Oct-2022 21:46:13.059 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
-  # 13-Oct-2022 21:46:13.061 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
-  # 13-Oct-2022 21:46:13.062 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1073 ms
   ```
+  > 출력내용 예시
+  > ```text
+  > # Using CATALINA_BASE: ~~~
+  > # Using CATALINA_HOME: ~~~
+  > # Using CATALINA_TMPDIR: ~~~
+  > # Using JRE_HOME: ~~~
+  > # Using CLASSPATH: ~~~
+  > # ...
+  > # ...
+  > # ...
+  > # 13-Oct-2022 21:46:12.746 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+  > # 13-Oct-2022 21:46:13.057 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+  > # 13-Oct-2022 21:46:13.059 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+  > # 13-Oct-2022 21:46:13.061 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+  > # 13-Oct-2022 21:46:13.062 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1073 ms
+  > ```
   
 * 버전 확인
      ```shell
       ${tomcat 폴더}\catalina.bat version
-       
-      # Using CATALINA_BASE:   ~~~
-      # Using CATALINA_HOME:   ~~~
-      # Using CATALINA_TMPDIR: ~~~
-      # Using JRE_HOME:        ~~~
-      # Using CLASSPATH:       ~~~
-      # Server version: Apache Tomcat/8.5.13
-      # Server built:   Mar 27 2017 14:25:04 UTC
-      # Server number:  8.5.13.0
-      # OS Name:        Windows 10
-      # OS Version:     10.0
-      # Architecture:   amd64
-      # JVM Version:    1.8.0_322-b06
-      # JVM Vendor:     Azul Systems, Inc.
-      ```
+     ```
+  > 출력내용 예시
+  > ```text
+  > # Using CATALINA_BASE:   ~~~
+  > # Using CATALINA_HOME:   ~~~
+  > # Using CATALINA_TMPDIR: ~~~
+  > # Using JRE_HOME:        ~~~
+  > # Using CLASSPATH:       ~~~
+  > # Server version: Apache Tomcat/8.5.13
+  > # Server built:   Mar 27 2017 14:25:04 UTC
+  > # Server number:  8.5.13.0
+  > # OS Name:        Windows 10
+  > # OS Version:     10.0
+  > # Architecture:   amd64
+  > # JVM Version:    1.8.0_322-b06
+  > # JVM Vendor:     Azul Systems, Inc.
+  > ```
   
 2. linux
 * 실행 가능하도록 permission 설정
@@ -98,43 +102,49 @@
 
     ```shell
     ${tomcat 폴더}/bin/configtest.sh
+    ```
+  > 출력내용 예시
+  > ```text
+  > # Using CATALINA_BASE:   ~~~
+  > # Using CATALINA_HOME:   ~~~
+  > # Using CATALINA_TMPDIR: ~~~
+  > # Using JRE_HOME:        ~~~
+  > # Using CLASSPATH:       ~~~
+  > # ...
+  > # ...
+  > # ...
+  > # 정보: Initializing ProtocolHandler ["http-nio-8080"]
+  > # 10월 13, 2022 9:51:39 오후 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+  > # 정보: Using a shared selector for servlet write/read
+  > # 10월 13, 2022 9:51:39 오후 org.apache.coyote.AbstractProtocol init
+  > # 정보: Initializing ProtocolHandler ["ajp-nio-8009"]
+  > # 10월 13, 2022 9:51:39 오후 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+  > # 정보: Using a shared selector for servlet write/read
+  > # 10월 13, 2022 9:51:39 오후 org.apache.catalina.startup.Catalina load
+  > # 정보: Initialization processed in 311 ms
+  > ```
 
-    # Using CATALINA_BASE:   ~~~
-    # Using CATALINA_HOME:   ~~~
-    # Using CATALINA_TMPDIR: ~~~
-    # Using JRE_HOME:        ~~~
-    # Using CLASSPATH:       ~~~
-    # ...
-    # ...
-    # ...
-    # 정보: Initializing ProtocolHandler ["http-nio-8080"]
-    # 10월 13, 2022 9:51:39 오후 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
-    # 정보: Using a shared selector for servlet write/read
-    # 10월 13, 2022 9:51:39 오후 org.apache.coyote.AbstractProtocol init
-    # 정보: Initializing ProtocolHandler ["ajp-nio-8009"]
-    # 10월 13, 2022 9:51:39 오후 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
-    # 정보: Using a shared selector for servlet write/read
-    # 10월 13, 2022 9:51:39 오후 org.apache.catalina.startup.Catalina load
-    # 정보: Initialization processed in 311 ms
-   ```
   * http 포트번호 8080 확인 ( conf/server.xml 설정파일 에서 포트번호를 수정했다면 다를 수 있다. )
   
 
 * 버전 확인
    ```shell
     ${tomcat 폴더}/bin/catalina.sh version
-  
-    # Using CATALINA_BASE:   ~~~
-    # Using CATALINA_HOME:   ~~~
-    # Using CATALINA_TMPDIR: ~~~
-    # Using JRE_HOME:        ~~~
-    # Using CLASSPATH:       ~~~
-    # Server version: Apache Tomcat/8.5.13
-    # Server built:   Mar 27 2017 14:25:04 UTC
-    # Server number:  8.5.13.0
-    # OS Name:        Linux
-    # OS Version:     5.15.0-46-generic
-    # Architecture:   amd64
-    # JVM Version:    1.8.0_342-8u342-b07-0ubuntu1~20.04-b07
-    # JVM Vendor:     Private Build
    ```
+  
+  > 출력내용 예시
+  > ```text
+  >   # Using CATALINA_BASE:   ~~~
+  >   # Using CATALINA_HOME:   ~~~
+  >   # Using CATALINA_TMPDIR: ~~~
+  >   # Using JRE_HOME:        ~~~
+  >   # Using CLASSPATH:       ~~~
+  >   # Server version: Apache Tomcat/8.5.13
+  >   # Server built:   Mar 27 2017 14:25:04 UTC
+  >   # Server number:  8.5.13.0
+  >   # OS Name:        Linux
+  >   # OS Version:     5.15.0-46-generic
+  >   # Architecture:   amd64
+  >   # JVM Version:    1.8.0_342-8u342-b07-0ubuntu1~20.04-b07
+  >   # JVM Vendor:     Private Build
+  >  ```
