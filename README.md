@@ -1,11 +1,49 @@
-# java_spring_4_3_2
-- Spring framework로 개발된 sample Web Application 입니다.
-- 본 가이드는 java spring 기반 smaple web application 에 대한 공통 가이드 입니다.
+# README
+- Web Application에 대한 Okta와의 인증 통합을 위한 가이드 입니다.
+- 세부 내용은 하단의 상세 가이드를 참고합니다.
+- 상세 가이드는 읽기 권한이 없으면 접근할 수 없습니다. 필요시 읽기 권한을 [요청](mailto:kkj99@nets.co.kr) 하시기 바랍니다.
 -----
-## Application 기본 구성사항
-- 각 sample application repository 참고
-- [4.3.2](https://github.com/kkj99/java_spring_4_3_2)
-- [4.3.4](https://github.com/kkj99/java_spring_4_3_4)
-- [4.3.13](https://github.com/kkj99/java_spring_4_3_13)
-- [5.2.7](https://github.com/kkj99/java_spring_5_2_7)
+## 상세 가이드
+- application의 Platfrion + Framework에 해당하는 가이드 참고
+- [Java 1.8 + Spring 4.3.2](https://github.com/kkj99/java_spring_4_3_2)
+- [Java 1.8 + Spring 4.3.4](https://github.com/kkj99/java_spring_4_3_4)
+- [Java 1.8 + Spring 4.3.13](https://github.com/kkj99/java_spring_4_3_13)
+- [Java 1.8 + Spring 5.2.7](https://github.com/kkj99/java_spring_5_2_7)
 - 읽기 권한이 없으면 접근할 수 없습니다. 필요시 [문의](mailto:kkj99@nets.co.kr) 하세요
+## OKTA 공식 SDK 가이드
+- [.NET](https://developer.okta.com/code/dotnet/aspnetcore/)
+  - [ASP.NET Core redirect authentication sample app](https://github.com/okta/samples-aspnetcore)
+  - [Okta-Hosted Login](https://github.com/okta/samples-aspnetcore/tree/master/samples-aspnetcore-3x/okta-hosted-login)
+  - [Identity Engine .NET SDK](https://github.com/okta/okta-idx-dotnet)
+  - [Okta .NET Authentication SDK](https://github.com/okta/okta-auth-dotnet)
+  - [Okta ASP.NET Core OIDC Middleware integration](https://github.com/okta/okta-aspnet)
+  - [Okta ASP.NET Core OIDC Integration on NuGet](https://www.nuget.org/packages/Okta.AspNetCore)
+- [Go](https://developer.okta.com/code/go/)
+- [Java](https://developer.okta.com/code/java/)
+  - [Okta Spring Boot Starter](https://github.com/okta/okta-spring-boot)
+  - [Micronaut redirect authentication sample app](https://github.com/okta/samples-java-micronaut/tree/master/okta-hosted-login)
+  - [Identity Engine Java SDK](https://github.com/okta/okta-idx-java)
+  - [Java embedded authentication with SDK sample app](https://github.com/okta/okta-idx-java/tree/master/samples/embedded-auth-with-sdk)
+  - [Okta Authentication SDK](https://github.com/okta/okta-auth-java)
+  - [Okta Authentication SDK reference(javadoc)](https://developer.okta.com/okta-auth-java/apidocs/)
+  - [Java Servlet Sample](https://github.com/okta/samples-java-servlet)
+- [Node.js](https://developer.okta.com/code/nodejs/)
+  - [Express JS redirect authentication samlple app](https://github.com/okta/samples-nodejs-express-4)
+  - [Okta JavaScript SDK](https://github.com/okta/okta-auth-js)
+  - [Okta Identity Engine README](https://github.com/okta/okta-auth-js/blob/master/docs/idx.md)
+  - [Express JS embedded authentication with SDK sample app](https://github.com/okta/okta-auth-js/tree/master/samples/generated/express-embedded-auth-with-sdk)
+  - [Express JS embedded Sign-In Widget sample app](https://github.com/okta/okta-auth-js/tree/master/samples/generated/express-embedded-sign-in-widget)
+  - [Okta Node.js SDK](https://github.com/okta/okta-sdk-nodejs)
+  - [okta-sdk-nodejs on npm](https://www.npmjs.com/package/@okta/okta-sdk-nodejs)
+  - [Node.js SDK reference(JSDoc)](https://developer.okta.com/okta-sdk-nodejs/jsdocs/)
+  - [Okta JWT Verifier for Node.js](https://github.com/okta/okta-jwt-verifier-js)
+  - [Okta OIDC Middleware for Node.js](https://github.com/okta/okta-oidc-middleware)
+- [PHP](https://developer.okta.com/code/php/)
+- [Python](https://developer.okta.com/code/python/)
+- [Angular](https://developer.okta.com/code/angular/)
+- [React](https://developer.okta.com/code/react/)
+- [Vue](https://developer.okta.com/code/vue/)
+- [JavaScript](https://developer.okta.com/code/javascript/)
+- [Android](https://developer.okta.com/code/android/)
+- [iOS](https://developer.okta.com/code/ios/)
+- [React Native](https://developer.okta.com/code/react-native/)
