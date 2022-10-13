@@ -22,22 +22,25 @@
 * 알집이나 반디집과 같은 압축 프로그램으로 압축을 해제한다.
 * 명령어 만으로 압축해제
   * 커맨드창에서 다음 명령어를 한단계씩 실행한다 (※ 커맨드창은 중간에 닫고 새로 열지 않는다.)
+    * 명령어를 실행하는 현재 위치를 CURRENT_PATH 환경변수에 저장
    ```shell
-   # 명령어를 실행하는 현재 위치를 CURRENT_PATH 환경변수에 저장
    >output.tmp cd 
    <output.tmp ( SET /P CURRENT_PATH= ) 
    del /f output.tmp
    ```
+  
+  * unzip.exe 파일 다운로드
    ```shell
-   # unzip.exe 파일 다운로드
    bitsadmin /transfer "download unzip.exe" https://github.com/kkj99/java_spring_guides/raw/main/unzip.exe %CURRENT_PATH%\unzip.exe
    ```
+
+  * 현재 위치\mvn 폴더에 압축 해제
    ```shell
-   # 현재 위치\mvn 폴더에 압축 해제
    unzip.exe -x %CURRENT_PATH%\maven.zip -d %CURRENT_PATH%\mvn
    ```
+
+   * 불필요한 파일 삭제
    ```shell
-   # 필요없어진 파일들 삭제
    del /f unzip.exe & del /f maven.zip
    ```
 3. Linux

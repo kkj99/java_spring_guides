@@ -3,17 +3,17 @@
 ## download
 1. windows
 - 커맨드창에서 실행
+  - Tomcat 다운로드
    ```shell
-   # Tomcat 다운로드
    bitsadmin /transfer "download tomcat binary" ${binary_link} ${path}tomcat.zip 
    ```
-- ${binary_link} : 다운로드할 maven 바이너리 주소. [확인](https://maven.apache.org/download.cgi)
-    - 8.5.13
-      - windows 64bit : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13-windows-x64.zip
-      - windows 32bit :https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13-windows-x86.zip
-      - zip : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.zip
-      - tar.gz : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz
-- ${path} : 다운로드 위치
+  - ${binary_link} : 다운로드할 maven 바이너리 주소. [확인](https://maven.apache.org/download.cgi)
+      - 8.5.13
+        - windows 64bit : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13-windows-x64.zip
+        - windows 32bit :https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13-windows-x86.zip
+        - zip : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.zip
+        - tar.gz : https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz
+  - ${path} : 다운로드 위치
 
 
 3. Linux
@@ -23,29 +23,32 @@
 
 ## 압축 해제
 
-2. windows
+1. windows
 * 알집이나 반디집과 같은 압축 프로그램으로 압축을 해제한다.
 * 명령어 만으로 압축해제
-    * 커맨드창에서 다음 명령어를 한단계씩 실행한다 (※ 커맨드창은 중간에 닫고 새로 열지 않는다.)
+  * 커맨드창에서 다음 명령어를 한단계씩 실행한다 (※ 커맨드창은 중간에 닫고 새로 열지 않는다.)
+  * 명령어를 실행하는 현재 위치를 CURRENT_PATH 환경변수에 저장
    ```shell
-   # 명령어를 실행하는 현재 위치를 CURRENT_PATH 환경변수에 저장
    >output.tmp cd 
    <output.tmp ( SET /P CURRENT_PATH= ) 
    del /f output.tmp
    ```
+  
+  * unzip.exe 파일 다운로드
    ```shell
-   # unzip.exe 파일 다운로드
    bitsadmin /transfer "download unzip.exe" https://github.com/kkj99/java_spring_guides/raw/main/unzip.exe %CURRENT_PATH%\unzip.exe
    ```
+  
+  * 현재 위치\mvn 폴더에 압축 해제
    ```shell
-   # 현재 위치\mvn 폴더에 압축 해제
    unzip.exe -x %CURRENT_PATH%\tomcat.zip -d %CURRENT_PATH%\tomcat
    ```
+  
+  * 필요없어진 파일들 삭제
    ```shell
-   # 필요없어진 파일들 삭제
    del /f unzip.exe & del /f tomcat.zip
    ```
-3. Linux
+2. Linux
    ```shell
    unzip -x ./tomcat.zip -d ./tomcat
    ```
