@@ -75,6 +75,8 @@
   > # 13-Oct-2022 21:46:13.062 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1073 ms
   > ```
   
+  * http 포트번호 8080 확인 ( conf/server.xml 설정파일 에서 포트번호를 수정했다면 다를 수 있다. )
+  
 * 버전 확인
      ```shell
       ${tomcat 폴더}\catalina.bat version
