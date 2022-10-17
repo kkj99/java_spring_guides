@@ -1,5 +1,9 @@
 # MAVEN 설치 가이드
 
+배포 바이너리를 다운로드 받아 압축을 해제합니다.
+
+-----
+
 ## download 
    1. windows 
    - 커맨드창에서 실행
@@ -15,7 +19,9 @@
       ```shell
       wget -O ./maven.zip ${binary link}  
       ```
-   
+
+-----
+
 ## 압축 해제
 
 2. windows 
