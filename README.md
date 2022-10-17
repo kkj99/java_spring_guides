@@ -5,10 +5,7 @@
 -----
 ## 상세 가이드
 - application의 Platform + Framework에 해당하는 가이드 참고
-- [Java 1.8 + Spring 4.3.2](https://github.com/kkj99/java_spring_4_3_2)
-- [Java 1.8 + Spring 4.3.4](https://github.com/kkj99/java_spring_4_3_4)
-- [Java 1.8 + Spring 4.3.13](https://github.com/kkj99/java_spring_4_3_13)
-- [Java 1.8 + Spring 5.2.7](https://github.com/kkj99/java_spring_5_2_7)
+- [Java 1.8 + Spring framework](https://github.com/kkj99/java_spring_4_3_2)
 - [.NET 3.5](https://github.com/kkj99/net_3_5)
 - [.NET 4](https://github.com/kkj99/net_4)
 - 읽기 권한이 없으면 접근할 수 없습니다. 필요시 [문의](mailto:kkj99@nets.co.kr) 하세요
